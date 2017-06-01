@@ -22,9 +22,12 @@ def index(request):
                 jobData['title'] = data['title']
                 jobData['company'] = data['company']
                 jobData['company_logo'] = data['company_logo']
+                jobData['id'] = data['id']
                 parsedData.append(jobData)
 
     return render(request, 'gitsearchapp/profile.html', {'data': parsedData})
 
 def detail(request):
-    return HttpResponse("Detailed view")
+    job_id = request.GET.get('id')
+    req = requests.get('https://jobs.github.com/positions/' + job_id + '.json')
+    return HttpResponse(req)
