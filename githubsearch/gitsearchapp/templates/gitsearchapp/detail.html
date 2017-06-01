@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Basic Bootstrap Template</title>
+    {% for key in data %}
+        <title>{{ key.title }}</title>
+    {% endfor %}
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <style>
@@ -15,6 +17,7 @@
           opacity: 0.7;
           filter: alpha(opacity=60);
         }
+
         div.transbox p {
           margin: 5%;
           font-weight: bold;
