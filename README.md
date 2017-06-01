@@ -47,11 +47,12 @@ The code structure and organization is simple. At a high level, the code is sepa
 ## Next Steps
 The immediate next steps to take in order to take this application from a first phase prototype to a fully-fledged application would be to make the UI more user friendly, expand feature list (allowing users to increase the scope of their search past San Francisco, CA would be trivial, simply involving an extra search box and passing the search term into an API request. This would make it so that the `keyword` search box and/or the `location` search box needs to be used, instead of only the `keyword` box).
 <br>
-#### UI Changes would include <br>
+#### UI Changes could include <br>
 * Fixing logo image size and providing a default image to companies who do not have a logo
 * Displaying the top level index view as a 2 column view
 * Removing the large amount of white/unused space
 * Instead of having the detail view be in a separate URL, use JavaScript/CSS to create a drop-down box of sorts with the necessary information inside. This way only one view is needed for both the top-level index and the detail view.
 * Make detail view more aesthetically pleasing/allow for rich text to be used in the job description instead of plaintext.
-
+* Provide feedback when no results are found
+* Provide multiple pages when a search returns many job results to prevent clutter
 
