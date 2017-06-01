@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="/static/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="/static/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/static/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/bootstrap/dist/css/bootstrap-theme.min.css">
+</head>
+<body>
+<h1 class="text-center"> Github Jobs Data - San Francisco </h1>
+  <div class="col-lg-12">
+      <style>
+        .form-signin {
+          max-width: 550px;
+          padding: 15px;
+          margin: 0 auto;
+        }    
+      </style>
+
+
+      <div class="container text-center">
+          <form class="form-signin" id="login_form" method="post" action="/app/profile/">
+            {% csrf_token %}
+            
+            <br>
+            <input type="text" name="keyword" class="form-control" placeholder="Job Description E.G. 'python'" value="" required autofocus>
+            <br>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Get Data</button>
+          </form>
+      </div>
+      <div class="table-responsive">
+          <table class="table table-bordered table-hover table-striped tablesorter">
+              <thead>
+              <tr>
+                <th class="header"> Job Title <i class="icon-sort"></i></th>
+                <th class="header"> Company <i class="icon-sort"></i></th>
+                <th class="header"> Company Logo <i class="icon-sort"></i></th>
+              </tr>
+          </thead>
+          <tbody>
+          
+          
+          {% for key in data %}
+              <tr>
+                  <td><font size="+1">{{ key.title }}</font></td>
+                  <td><font size="+1">{{ key.company }}</font></td>
+                  <td><img src={{ key.company_logo }} style = "max-width:50%;max-height:50%;"></td>
+              </tr>
+          {% endfor %}
+          
+          
+          </tbody>
+          </table>
+      </div>
+    </div>
+</body>
+</html>
