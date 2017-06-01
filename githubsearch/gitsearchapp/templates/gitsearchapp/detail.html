@@ -19,7 +19,7 @@
         }
 
         div.transbox p {
-          margin: 5%;
+          margin: 2%;
           font-weight: bold;
           color: #000000;
         }
@@ -28,14 +28,12 @@
 <body>
     <div class="container text-center">
         {% for key in data %}
-            <h1>{{ key.title }}</h1>
-            <h3>{{ key.company }}</h2>
-            <script src="js/jquery-1.11.3.min.js"></script>
-            <script src="js/bootstrap.min.js"></script>
+            <font size="+3"> <strong> {{ key.title }} </strong> </font> <font size="+2"> at <a href="{{ key.company_url }}"> {{ key.company }} </a> </font>
+            <hr>
+            <h3> Job Description: </h3>
             <div class="transbox">
                 <p> {{ key.description }} </p>
             </div>
-            <p> <a href="{{ key.company_url }}"> Visit {{ key.company }} Website </a>
         {% endfor %}
     </div>
 </body>
