@@ -42,7 +42,7 @@ The code structure and organization is simple. At a high level, the code is sepa
 <br>
 `githubsearch` contains the base URL patterns and the main Django settings and directs any URL with the pattern `baseurl/app` to `gitsearchapp`.
 <br>
-`gitsearchapp` is the main application. It queries the GitHub API on jobs that match a user-input keyword and are near San Francisco, CA. `gitsearchapp` is a barebones prototype Django application that revolves mainly around `urls.py`, `views.py` and the templates associated with each view. `models.py`, `tests.py`, and `admin.py` were not utilized for this application.
+`gitsearchapp` is the "main" application. It queries the GitHub API on jobs that match a user-input keyword and are near San Francisco, CA. `gitsearchapp` is a barebones prototype Django application that revolves mainly around `urls.py`, `views.py` and the templates associated with each view. `models.py`, `tests.py`, and `admin.py` were not utilized for this application. There are two views, one for the top level index, and another that the user is taken to on click for the detailed information on a job.
 
 ## Next Steps
 The immediate next steps to take in order to take this application from a first phase prototype to a fully-fledged application would be to make the UI more user friendly, expand feature list (allowing users to increase the scope of their search past San Francisco, CA would be trivial, simply involving an extra search box and passing the search term into an API request. This would make it so that the `keyword` search box and/or the `location` search box needs to be used, instead of only the `keyword` box).
