@@ -17,6 +17,17 @@ Job search on a keyword for jobs near the San Francisco area.
     2. `python manage.py runserver`
 5. In a browser, go to <http://127.0.0.1:8000/app/>
 
+## Features
+* Top level index view displaying:
+    * Job Title
+    * Company
+    * Company Logo
+* Click on job title to desplay detailed view with:
+    * Job Title
+    * Company
+    * Job Description
+    * Company Website
+
 ## Technologies Used
 * GitHub Jobs API
 * Django 1.11.2
