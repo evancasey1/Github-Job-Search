@@ -42,7 +42,11 @@
           
           {% for key in data %}
               <tr>
-                  <td><font size="+1">{{ key.title }}</font></td>
+                  <td>
+                    <a href="/app/detail/?id={{ key.id }}">
+                      <font size="+1">{{ key.title }}</font>
+                    </a>
+                  </td>
                   <td><font size="+1">{{ key.company }}</font></td>
                   <td><img src={{ key.company_logo }} style = "max-width:50%;max-height:50%;"></td>
               </tr>
