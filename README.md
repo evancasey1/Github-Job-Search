@@ -9,7 +9,7 @@ Job search on a keyword for jobs near the San Francisco area.
     1. `pip install virtualenv`
     2. `virtualenv <environment>`
     3. `source <environment>/bin/activate`
-3. Download Django and necessary modules.
+3. Install Django and necessary modules.
     1. `pip install django`
     2. `pip install requests`
 4. Run python server
