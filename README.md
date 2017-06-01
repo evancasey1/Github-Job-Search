@@ -57,3 +57,6 @@ The immediate next steps to take in order to take this application from a first 
 * Provide multiple pages when a search returns many job results to prevent clutter
 * Have proper homepage before any search is run
 
+#### Other changes <br>
+* Rename files and the application to fit convention or to become intellectual property
+
