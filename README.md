@@ -51,8 +51,8 @@ The immediate next steps to take in order to take this application from a first 
 * Fixing logo image size and providing a default image to companies who do not have a logo
 * Displaying the top level index view as a 2 column view
 * Removing the large amount of white/unused space
-* Instead of having the detail view be in a separate URL, use JavaScript/CSS to create a drop-down box of sorts with the necessary information inside. This way only one view is needed for both the top-level index and the detail view.
-* Make detail view more aesthetically pleasing/allow for rich text to be used in the job description instead of plaintext.
+* Instead of having the detail view be in a separate URL, use JavaScript/CSS to create a drop-down box of sorts with the necessary information inside. This way only one view is needed for both the top-level index and the detail view
+* Make detail view more aesthetically pleasing/allow for rich text to be used in the job description instead of plaintext
 * Provide feedback when no results are found
 * Provide multiple pages when a search returns many job results to prevent clutter
 * Have proper homepage before any search is run
