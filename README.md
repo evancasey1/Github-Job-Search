@@ -18,7 +18,7 @@ Job search on a keyword for jobs near the San Francisco area.
 5. In a browser, go to <http://127.0.0.1:8000/app/>
 
 ## Features
-* Top level index view displaying:
+* Top level three column index view displaying:
     * Job Title
     * Company
     * Company Logo
