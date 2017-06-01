@@ -3,6 +3,20 @@
 ## Summary
 Job search on a keyword for jobs near the San Francisco area.
 
+## Usage/Setup
+1. Download/Clone repository into working directory.
+2. Set up virtual environment
+    1. `pip install virtualenv`
+    2. `virtualenv <environment>`
+    3. `source <environment>/bin/activate`
+3. Download Django and necessary modules.
+    1. `pip install django`
+    2. `pip install requests`
+4. Run python server
+    1. Navigate to subdirectory containing manage.py
+    2. `python manage.py runserver`
+5. In a browser, go to <http://127.0.0.1:8000/app/>
+
 ## Technologies Used
 * GitHub Jobs API
 * Django 1.11.2
