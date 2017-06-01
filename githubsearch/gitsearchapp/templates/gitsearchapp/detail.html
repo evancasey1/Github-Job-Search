@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Basic Bootstrap Template</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- Optional Bootstrap theme -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+</head>
+<body>
+    <div class="container text-center">
+        {% for key in data %}
+            <h1>{{ key.title }}</h1>
+            <h3>{{ key.company }}</h2>
+            <script src="js/jquery-1.11.3.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <p> {{ key.description }} </p>
+            <p> <a href="{{ key.company_url }}"> Visit {{ key.company }} Website </a>
+        {% endfor %}
+    </div>
+</body>
+</html>
