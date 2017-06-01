@@ -9,14 +9,10 @@ import json
 # Create your views here.
 
 def index(request):
-    return HttpResponse('Hello World!')
-
-def profile(request):
     parsedData = []
     if request.method == 'POST':
         print request.POST
         keyword = request.POST.get('keyword')
-        #keyword = "python"
         req = requests.get('https://jobs.github.com/positions.json?description=' + keyword + '&location=san+francisco')
         jsonList = []
         jsonList.append(json.loads(req.content))
@@ -29,3 +25,6 @@ def profile(request):
                 parsedData.append(jobData)
 
     return render(request, 'gitsearchapp/profile.html', {'data': parsedData})
+
+def detail(request):
+    return HttpResponse("Detailed view")
