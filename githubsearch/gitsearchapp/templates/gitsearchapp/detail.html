@@ -6,8 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Basic Bootstrap Template</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <!-- Optional Bootstrap theme -->
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <style>
+        div.transbox {
+          margin: 30px;
+          background-color: #ffffff;
+          border: 1px solid black;
+          opacity: 0.7;
+          filter: alpha(opacity=60);
+        }
+        div.transbox p {
+          margin: 5%;
+          font-weight: bold;
+          color: #000000;
+        }
+    </style>
 </head>
 <body>
     <div class="container text-center">
@@ -16,7 +29,9 @@
             <h3>{{ key.company }}</h2>
             <script src="js/jquery-1.11.3.min.js"></script>
             <script src="js/bootstrap.min.js"></script>
-            <p> {{ key.description }} </p>
+            <div class="transbox">
+                <p> {{ key.description }} </p>
+            </div>
             <p> <a href="{{ key.company_url }}"> Visit {{ key.company }} Website </a>
         {% endfor %}
     </div>
