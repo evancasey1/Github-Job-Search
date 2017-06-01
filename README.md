@@ -55,4 +55,5 @@ The immediate next steps to take in order to take this application from a first 
 * Make detail view more aesthetically pleasing/allow for rich text to be used in the job description instead of plaintext.
 * Provide feedback when no results are found
 * Provide multiple pages when a search returns many job results to prevent clutter
+* Have proper homepage before any search is run
 
